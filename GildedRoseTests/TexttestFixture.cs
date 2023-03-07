@@ -36,13 +36,13 @@ namespace GildedRoseTests
                     SellIn = 5,
                     Quality = 49
                 },
-                // this conjured item does not work properly yet
-                new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
+                new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6},
+                new Item {Name = "Conjured Bisquit", SellIn = 3, Quality = 40}
             };
 
             var app = new GildedRose(Items);
 
-            int days = 2;
+            int days = 5;
             if (args.Length > 0)
             {
                 days = int.Parse(args[0]) + 1;
